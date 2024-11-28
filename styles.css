@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+    color: limegreen;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: color 1s;
+}
+
+body.locked {
+    color: red;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid limegreen;
+    padding: 20px;
+    box-shadow: 0 0 15px limegreen;
+    transition: box-shadow 1s, border-color 1s;
+}
+
+body.locked .container {
+    border-color: red;
+    box-shadow: 0 0 15px red;
+}
+
+#countdownTimer {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: limegreen;
+    display: none;
+    transition: color 1s;
+}
+
+body.locked #countdownTimer {
+    display: block;
+    color: red;
+}
+
+button {
+    background: black;
+    color: limegreen;
+    font-size: 1.2rem;
+    border: 2px solid limegreen;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.5s, border-color 0.5s;
+}
+
+body.locked button {
+    color: red;
+    border-color: red;
+}
+
+input {
+    background: black;
+    color: limegreen;
+    border: 2px solid limegreen;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    transition: color 0.5s, border-color 0.5s;
+}
+
+body.locked input {
+    color: red;
+    border-color: red;
+}
+
+#message {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    transition: color 1s;
+}
