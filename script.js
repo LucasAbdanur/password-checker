@@ -1,4 +1,4 @@
-const correctPassword = "password";
+const correctPassword = "passwordesenha";
 let attemptCount = 0;
 let isLocked = false;
 let lockTime = 60000;
